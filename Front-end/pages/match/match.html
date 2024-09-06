@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="match.css">
+    <link rel="icon" href="../../resources/logo.jpg">
+    <script defer src="match.js"></script>
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Catphish</title>
+</head>
+<body>
+    <nav id="nav">
+        <label id="logo">catphish</label>
+        
+        <ul>
+            <!-- "href" for the following anchor elements are intentionally set in the JS file rather than directly on here because of parameters inaccessible in HTML -->
+            <li><a id="profile" class="unmatched">Profile</a></li>
+            <li><a id="match" class="active">Match</a></li>
+            <li><a id="matches" class="unmatched">Matches</a></li>
+            <li><a id="signout" class="unmatched">Sign Out</a></li>
+            <li><a id="delete" class="unmatched">Delete</a></li>
+        </ul>
+    </nav>
+
+    <section id="section">
+        <div id="cover" class="cover-off">
+            <div class="card">
+                <div id="pic-div">
+                    <img src="" id="pic">
+                </div>
+
+                <h2 id="candidate"></h2>
+
+                <textarea id="bio" readonly maxlength="507" spellcheck="false"></textarea>
+            </div>
+
+            <div class="options">
+                <label for="click" id="times" class="fas fa-times"></label>
+                <label for="click" id="check" class="fas fa-check"></label>
+            </div>
+        </div>
+    </section>
+    <div id="message" class="message-off">MATCHED!</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" href="../../resources/logo.jpg">
+    <script defer src="profile.js"></script>
+    <title>Catphish</title>
+</head>
+<body>
+    <nav>
+        <label id="logo">catphish</label>
+        
+        <ul>
+            <!-- "href" for the following anchor elements are intentionally set in the JS file rather than directly on here because of parameters inaccessible in HTML -->
+            <li><a id="profile" class="active">Profile</a></li>
+            <li><a id="match">Match</a></li>
+            <li><a id="matches">Matches</a></li>
+            <li><a id="signout">Sign Out</a></li>
+            <li><a id="delete">Delete</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="card">
+            <div id="pic-div">
+                <img src="" id="pic">
+                <input type="file" id="upload-pic">
+                <label for="upload-pic" id="upload-btn">Choose picture</label>
+            </div>
+
+            <h2 id="username"></h2>
+
+            <textarea id="bio" maxlength="507" spellcheck="false" placeholder="Enter bio"></textarea>
+            
+            <button id="save-profile">Save</button><span id="saved"></span>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="../../resources/logo.jpg">
+    <script defer src="main.js"></script>
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Catphish</title>
+</head>
+<body>
+    <nav>
+        <label id="logo" class="logo">catphish</label>
+        <ul>
+            <li><button id="signin" type="button">Log in</button></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 id="slogan">Go Phish®</h1>
+
+        <div class="optionsbox">
+            <button id="signup" type="button">Create account</button>
+        </div>
+
+        <div id="popup">
+            <h1 id="popup-header"></h1>
+
+            <form>
+                <label id="popup-times" class="fas fa-times"></label>
+                <p style="cursor: default;">Username</p>
+                <input type="text" id="popup-username" placeholder="Enter username">
+                <p style="cursor: default;">Password</p>
+                <input type="password" id="popup-password" placeholder="Enter password">
+                <button id="popup-submit" type="button">Submit</button>
+                <div id="popup-error"></div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
